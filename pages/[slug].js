@@ -1,7 +1,7 @@
 import { useRouter } from 'next/router';
 import MoreData from "../components/home/MoreData";
 
-export const getInitialProps = async (context) => {
+export const getServerSideProps = async (context) => {
   const { slug } = context.query;
 
   if (! slug) {

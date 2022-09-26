@@ -2,8 +2,8 @@ import axios from 'axios';
 import querystring from 'query-string';
 
 const config = {
-    base: 'http://43.205.204.223/api',
-    // base: 'https://tryme.info/lv_blog/api',
+    //base: 'http://43.205.204.223/api',
+    base: 'https://api2.tryme.info/api',
 };
 
 const route = (api) => {
