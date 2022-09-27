@@ -3,11 +3,11 @@
 import { useTheme } from "next-themes";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import Button from "../components/Button"; 
+import Button from "../components/Button";
 
 const Header = () => {
   const { systemTheme, theme, setTheme } = useTheme();
-  const [mounted, setMounted] = useState(false); 
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     setMounted(true);
@@ -83,16 +83,14 @@ const Header = () => {
   return (
     <header className="shadow-sm dark:shadow-white bg-white dark:bg-[#171717] sticky top-0 z-50">
       <div className="h-16 flex items-center justify-between mx-5 md:mx-28">
-        {/* <Link href="/"> */}
-        {logoChange()}
-        {/* </Link> */}
+        <Link href="/">{logoChange()}</Link>
         <div className="flex items-center">
           <button className="rounded-sm text-xs md:text-base mr-3 md:mr-10 bg-[#171717] dark:bg-white text-white dark:text-[#171717] px-2 md:px-3 py-1">
             Lapaas Services
           </button>
           {renderThemeChanger()}
         </div>
-      </div> 
+      </div>
     </header>
   );
 };

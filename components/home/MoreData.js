@@ -41,7 +41,7 @@ class MoreData extends React.Component {
             </div>
           </div>
         ) : (
-          <div>
+          <div className="mx-5 md:mx-40 lg:mx-52">
             <div className="my-10">
               <h6 className="text-gray-500 font-bold mb-2">
                 {this.state.post.current?.post_at}
